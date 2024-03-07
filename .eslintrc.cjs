@@ -40,10 +40,12 @@ const config = {
   },
   settings: {
     'import/resolver': {
-      typescript: true,
+      typescript: {
+        project: ['tsconfig.json'],
+      },
     },
   },
-  ignorePatterns: ['*.config.*', '*.cjs'],
+  ignorePatterns: ['*.config.*', '*rc.cjs', '*rc.js'],
 }
 
 module.exports = config
